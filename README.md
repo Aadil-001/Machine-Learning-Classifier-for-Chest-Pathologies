@@ -10,13 +10,11 @@ An end-to-end computer vision pipeline developed in PyTorch to classify 14 disti
 ---
 
 ## 📊 Training Dynamics & Convergence
-<img width="1389" height="490" alt="Unknown-2" src="https://github.com/user-attachments/assets/55af0dd5-6994-43e6-bf16-c81f6aa551b1" />
 The network demonstrated clean convergence across 5 baseline epochs and 3 fine-tuning epochs without experiencing overfitting.
 
 ### Loss & AUC Trajectories
-<img width="1143" height="1181" alt="Unknown-4" src="https://github.com/user-attachments/assets/dfc4016b-995e-4ff8-9309-8339d6b13b22" />
-<img width="1189" height="590" alt="Unknown-3" src="https://github.com/user-attachments/assets/2628cc2d-6190-4500-b698-a6920386278c" />
 
+<img width="1389" height="490" alt="Unknown-2" src="https://github.com/user-attachments/assets/55af0dd5-6994-43e6-bf16-c81f6aa551b1" />
 
 As visualized above, the training loss dipped cleanly beneath validation loss around Epoch 3, signaling a robust optimization shift without divergence.
 
