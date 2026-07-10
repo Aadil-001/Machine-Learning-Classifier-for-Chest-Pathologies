@@ -2,14 +2,14 @@
 
 An end-to-end computer vision pipeline developed in PyTorch to classify 14 distinct thoracic pathologies from the NIH Chest X-ray dataset. The model addresses severe class imbalance utilizing custom threshold optimization, achieving a **0.7985 Mean AUC** on a single-batch subset evaluation.
 
-## 🚀 Key Highlights & Engineering Challenges Overcome
+## Key Highlights & Engineering Challenges Overcome
 * **Secure Cloud Data Pipeline:** Integrated Kaggle API directly within a cloud environment, utilizing encrypted environment variables (`Colab Secrets`) to securely ingest high-volume medical data.
 * **Advanced Fine-Tuning Strategy:** Employed a multi-phase training regimen—unfreezing deep convolutional layers with a highly granular learning rate—boosting the Mean AUC baseline from `0.7289` to `0.7896`.
 * **Mitigating Class Imbalance:** Resolved the "Imbalanced Dataset Trap" where rare conditions (e.g., Hernia, Edema) yielded a `0.000` F1-score under standard `0.50` decision boundaries. Implemented a threshold grid-search maximizing Youden’s J-statistic to dynamically adjust decision cutoffs per pathology.
 
 ---
 
-## 📊 Training Dynamics & Convergence
+## Training Dynamics & Convergence
 The network demonstrated clean convergence across 5 baseline epochs and 3 fine-tuning epochs without experiencing overfitting.
 
 ### Loss & AUC Trajectories
@@ -20,7 +20,7 @@ As visualized above, the training loss dipped cleanly beneath validation loss ar
 
 ---
 
-## 🏆 Performance Evaluation
+## Performance Evaluation
 
 ### ROC-AUC per Pathology Breakdown
 The model effectively distinguished structural anomalies with macro-geometric footprints (e.g., Cardiomegaly, Hernia) while identifying opportunities for future spatial optimization on localized micro-features (e.g., Nodules).
@@ -37,7 +37,7 @@ The model effectively distinguished structural anomalies with macro-geometric fo
 
 ---
 
-## 🔍 Qualitative Analysis (Model Predictions on Test Scans)
+## Qualitative Analysis (Model Predictions on Test Scans)
 To validate clinical reasoning, the model was evaluated on individual test films to map multi-label predictions against ground truth labels.
 
 <img width="1143" height="1181" alt="Ind-Xrays" src="https://github.com/user-attachments/assets/07b9c435-fa88-47ad-9218-aa3911c0a42a" />
@@ -49,7 +49,7 @@ To validate clinical reasoning, the model was evaluated on individual test films
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## Tech Stack & Tools
 * **Language:** Python
 * **Frameworks:** PyTorch, Torchvision
 * **Data Processing:** Pandas, NumPy, Scikit-Learn
