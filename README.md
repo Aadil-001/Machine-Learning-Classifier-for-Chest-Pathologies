@@ -32,14 +32,15 @@ The model effectively distinguished structural anomalies with macro-geometric fo
 | **Pneumothorax** | 0.8636 | Good | **Pleural Thickening** | 0.8130 | Good |
 | **Cardiomegaly** | 0.8568 | Good | **Mass** | 0.7638 | Fair |
 
-*Insert your beautiful horizontal bar chart visualization here!*
+<img width="1189" height="590" alt="Model by condition" src="https://github.com/user-attachments/assets/06dd15ca-aa28-4eae-9be7-da951034a357" />
+
 
 ---
 
 ## 🔍 Qualitative Analysis (Model Predictions on Test Scans)
 To validate clinical reasoning, the model was evaluated on individual test films to map multi-label predictions against ground truth labels.
 
-*Insert your final 4-pane individual X-ray prediction image here!*
+<img width="1143" height="1181" alt="Ind-Xrays" src="https://github.com/user-attachments/assets/07b9c435-fa88-47ad-9218-aa3911c0a42a" />
 
 ### Key Clinical Insights:
 1. **Multi-Label Mastery:** In complex cases (e.g., *Effusion \| Infiltration*), the model simultaneously balanced co-occurring pathologies, accurately matching both clinical presentations.
