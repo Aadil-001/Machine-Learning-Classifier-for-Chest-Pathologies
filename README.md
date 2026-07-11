@@ -3,7 +3,7 @@
 An end-to-end computer vision pipeline developed in PyTorch to classify 14 distinct thoracic pathologies from the NIH Chest X-ray dataset. The model addresses severe class imbalance utilizing custom threshold optimization, achieving a **0.7985 Mean AUC** on a single-batch subset evaluation.
 
 ## Key Highlights & Engineering Challenges Overcome
-* **Secure Cloud Data Pipeline:** Integrated Kaggle API directly within a cloud environment, utilizing encrypted environment variables (`Colab Secrets`) to securely ingest high-volume medical data.
+* **Secure Cloud Data Pipeline:** Integrated Kaggle API directly within a cloud environment, utilizing encrypted environment variables to securely ingest high-volume medical data.
 * **Advanced Fine-Tuning Strategy:** Employed a multi-phase training regimen—unfreezing deep convolutional layers with a highly granular learning rate—boosting the Mean AUC baseline from `0.7289` to `0.7896`.
 * **Mitigating Class Imbalance:** Resolved the "Imbalanced Dataset Trap" where rare conditions (e.g., Hernia, Edema) yielded a `0.000` F1-score under standard `0.50` decision boundaries. Implemented a threshold grid-search maximizing Youden’s J-statistic to dynamically adjust decision cutoffs per pathology.
 
